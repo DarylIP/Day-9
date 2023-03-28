@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week3Exer2</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #000000;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #4caf50;
+        padding: 20px;
+        text-align: center;
+        color: white;
+      }
+
+      main {
+        max-width: 600px;
+        margin: 50px auto;
+        text-align: center;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .result {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        border: solid 1px red;
+        animation: animate 5s linear infinite;
+      }
+
+      .result:hover {
+        transform: scale(1.1);
+      }
+
+      .resultKey {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        border: blueviolet 1px solid;
+        animation: animate 5s linear infinite;
+      }
+      .resultKey:hover {
+        transform: scale(1.1);
+      }
+      .resultCode {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        border: gold solid 1px;
+        animation: animate 5s linear infinite;
+      }
+      .resultCode:hover {
+        transform: scale(1.1);
+      }
+
+      @keyframes animate {
+        0%,
+        18%,
+        20%,
+        50.1%,
+        60%,
+        65.1%,
+        80%,
+        90.1%,
+        92% {
+          color: #0e3742;
+          text-shadow: none;
+        }
+        18.1%,
+        20.1%,
+        30%,
+        50%,
+        60.1%,
+        65%,
+        80.1%,
+        90%,
+        92.1%,
+        100% {
+          color: #fff;
+          text-shadow: 0 0 10px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4,
+            0 0 160px #03bcf4;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>KeyCode Finder</h1>
+    </header>
+    <main>
+      <br />
+      <p>e.Key</p>
+      <div class="result" id="result">ArrowUp</div>
+      <br />
+      <div>
+        <p>e.Code</p>
+        <div class="resultKey">Key</div>
+        <br />
+        <p>e.KeyCode</p>
+        <div class="resultCode">Code</div>
+      </div>
+    </main>
+    <script src="week3exer2.js"></script>
+  </body>
+</html>
